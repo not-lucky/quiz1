@@ -12,7 +12,7 @@ import "../css/App.css"
 import { useNavigate } from 'react-router-dom'
 
 function Category({ selectedId, setSelectedId }) {
-    console.log('dataasdasdsad', data)
+    // console.log('dataasdasdsad', data)
 
     const handleClick = (string) => {
         setSelectedId(string);
@@ -102,7 +102,7 @@ export const QuizForm = () => {
     const handleChange = (event) => {
         const temp = event.target.value;
         setNum(temp);
-        console.log('num', temp);
+        // console.log('num', temp);
     }
 
     return (<>

@@ -63,14 +63,14 @@ function LoadingButton({ num, selectedString, difficulty, type, navigate }) {
         // console.log('"VALID"', numNum);
         // setLoading(false);
         // return;
-        console.log('"called"', "called")
+        // console.log('"called"', "called")
         const url = "https://opentdb.com/api.php";
         const a = num ? num : 10;
         const b = selectedString ? "&category=" + selectedString : "";
         const c = difficulty ? "&difficulty=" + difficulty : "";
         const d = type ? "&type=" + type : "";
         const query = url + "?amount=" + a + b + c + d + "&encode=base64";
-        console.log('query', query)
+        // console.log('query', query)
 
         // if (isLoading) {
         //     setQuiz(mixAndShuffle(quiz));
@@ -85,7 +85,7 @@ function LoadingButton({ num, selectedString, difficulty, type, navigate }) {
                 .then(response => {
                     const quiz = mixAndShuffle(response.data.results);
                     setQuiz(quiz);
-                    console.log('response.data', quiz)
+                    // console.log('response.data', quiz)
                     setLoading(false);
 
                     function sleepFor(sleepDuration) {
@@ -93,7 +93,7 @@ function LoadingButton({ num, selectedString, difficulty, type, navigate }) {
                         while (new Date().getTime() < now + sleepDuration) { /* Do nothing */ }
                     }
 
-                    sleepFor(3);
+                    sleepFor(4);
 
                     const quizId = uuidv4();
                     navigate(`/quiz1/${quizId}`);

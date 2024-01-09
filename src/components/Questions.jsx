@@ -10,12 +10,12 @@ import ShowQuestions from './ShowQuestions';
 
 
 const Questions = React.memo(({ mcqData }) => {
-    console.log('mcqData', mcqData)
+    // console.log('mcqData', mcqData)
     const [groupToggle, setGroupToggle] = useState(true);
     const [selectedOption, setSelectedOption] = useState(new Array(mcqData.length));
     const [showResults, setShowResults] = useState(false);
     const [score, setScore] = useState(0);
-    console.log('selectedOption', selectedOption)
+    // console.log('selectedOption', selectedOption)
 
     const handleSubmit = () => {
         let newScore = 0;

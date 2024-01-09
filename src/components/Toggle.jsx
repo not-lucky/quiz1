@@ -6,7 +6,7 @@ const ToggleSwitch = ({ group, setGroup }) => {
 
     const handleOnChange = () => {
         setGroup(!group);
-        console.log(`Gorup ${group ? 'OFF' : 'ON'}`);
+        // console.log(`Gorup ${group ? 'OFF' : 'ON'}`);
     };
 
     return (

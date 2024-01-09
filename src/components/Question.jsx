@@ -10,7 +10,7 @@ const Question = ({ question, index, selectedOption, setSelectedOption, showResu
         newSelectedOption[index] = item;
         setSelectedOption(newSelectedOption);
     };
-    console.log('question', question)
+    // console.log('question', question)
 
     return (
 

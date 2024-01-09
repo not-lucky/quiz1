@@ -3,7 +3,7 @@ import Question from './Question';
 import "../css/App.css"
 
 const GroupResult = ({ mcqData, selectedOption, setSelectedOption, showResults }) => {
-    console.log('mcqData', mcqData)
+    // console.log('mcqData', mcqData)
     const correctAnswerArray = []
     const wronfAnswerArray = []
 
@@ -14,7 +14,7 @@ const GroupResult = ({ mcqData, selectedOption, setSelectedOption, showResults }
             correctAnswerArray.push([i, mcqData[i]])
         }
     }
-    console.log('newArray', correctAnswerArray);
+    // console.log('newArray', correctAnswerArray);
     return (
         <>
             {

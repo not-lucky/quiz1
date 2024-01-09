@@ -24,7 +24,7 @@ function modifyDOM(theme) {
         document.documentElement.setAttribute('data-bs-theme', theme);
     }
 }
-console.log('"ran"', "ran")
+// console.log('"ran"', "ran")
 
 const ThemeSelector = ({ theme, setTheme }) => {
     const [mode, setMode] = useState(getPreferredTheme());
